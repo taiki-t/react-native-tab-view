@@ -392,6 +392,7 @@ export default class TabBar<T: Route<*>> extends PureComponent<
             onMomentumScrollBegin={this._handleMomentumScrollBegin}
             onMomentumScrollEnd={this._handleMomentumScrollEnd}
             contentOffset={this.state.initialOffset}
+            keyboardShouldPersistTaps={'always'} 
             ref={this._setRef}
           >
             {routes.map((route, i) => {
